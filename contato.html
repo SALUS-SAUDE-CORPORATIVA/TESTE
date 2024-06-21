@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/contato.css">
+    <title>Contato</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <form id="contact-form"> <!-- FORMULARIO -->
+                <h3>Formulário de Contato</h3>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required><br><br>
+                
+                <label for="empresa">Empresa:</label>
+                <input type="text" id="empresa" name="empresa" required><br><br>
+                
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" required><br><br>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required><br><br>
+                
+                <label for="mensagem">Mensagem (opcional):</label>
+                <textarea id="mensagem" name="mensagem"></textarea><br><br>
+                
+                <label for="contact-method">Método de Contato:</label>
+                <select id="contact-method" name="contact-method">
+                    <option value="email">E-mail</option>
+                    <option value="whatsapp">WhatsApp</option>
+                </select><br><br>
+                
+                <button type="submit">Enviar</button>
+                <div class="back-button-container">
+                    <button onclick="window.history.back();" class="back-button">Voltar</button>
+                </div>
+            </form>
+            
+            <div id="mensagem-confirmacao" style="display: none; text-align: center;">
+                <p>Obrigado pelo contato! 😊</p>
+            </div>
+        </div>
+
+        <div class="image-container">
+            <!-- Substitua o caminho abaixo com a sua imagem -->
+            <img src="./img/nos.jpeg" alt="Imagem de fundo">
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

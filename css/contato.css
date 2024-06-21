@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('../img/fa264054b6a53d1c84b80cd982d40d80.jpg'); /* URL da sua imagem */
+    background-size: cover; /* Ajusta o tamanho da imagem para cobrir toda a tela */
+    background-position: center; /* Centraliza a imagem horizontal e verticalmente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Altura total da viewport */
+    margin: 0;
+    color: #fff; /* Cor do texto */
+}
+
+.container {
+    display: flex;
+    max-width: 1200px; /* Largura máxima do container */
+    width: 100%;
+    background-color: #fff; /* Cor de fundo do container */
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+    position: relative; /* Necessário para posicionar o botão */
+}
+
+.form-container {
+    flex: 1; /* Ocupa todo o espaço restante */
+    padding: 50px; /* Espaçamento interno */
+}
+
+form h3 {
+    color: #6A0DAD; /* Cor do título do formulário */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000; /* Cor do texto dos labels */
+}
+
+input, textarea, select {
+    width: 100%; /* Ocupa toda a largura disponível */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Estilo da borda */
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px; /* Espaço entre os campos */
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #6A0DAD; /* Cor da borda ao focar */
+    outline: none;
+}
+
+textarea {
+    height: 100px; /* Altura do textarea */
+    resize: none; /* Impede redimensionamento */
+}
+
+button {
+    background-color: #6A0DAD; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    padding: 15px 20px; /* Espaçamento interno */
+    border-radius: 4px; /* Borda arredondada */
+    cursor: pointer; /* Cursor ao passar */
+    width: 100%; /* Ocupa toda a largura */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #5A0DAA; /* Cor de fundo ao passar */
+}
+
+.image-container {
+    flex: 1; /* Ocupa todo o espaço restante */
+    overflow: hidden; /* Esconde qualquer conteúdo extra */
+    position: relative; /* Posicionamento relativo */
+}
+
+.image-container img {
+    width: 100%; /* Ocupa toda a largura */
+    height: 100%; /* Ocupa toda a altura */
+    object-fit: cover; /* Mantém proporções da imagem */
+}
+
+.back-button-container {
+    text-align: right; /* Alinha o conteúdo à esquerda */
+    margin-top: 20px;
+    margin-lef: 20px; /* Adiciona margem à esquerda para espaçamento */
+}
+
+.back-button {
+    padding: 10px 20px; /* Ajusta o padding para maior espaçamento */
+    background-color: #000000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.back-button:hover {
+    background-color: #333333; /* Cor de fundo alterada ao passar o mouse */
+}

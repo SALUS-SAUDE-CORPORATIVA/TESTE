@@ -1,0 +1,622 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+ul {
+    padding: 0px!important;
+}
+.menu-principal {
+    width: 100%;
+}
+
+.header-1 {
+    background-color: #252323;
+    height: 70;
+    display: flex;
+    align-items: center;
+    padding: 0 10px; /* Adiciona algum espaçamento interno ao cabeçalho */
+    width: 100%; /* Ocupa toda a largura */
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    padding-left: 200px; /* Adiciona um padding para deslocar a imagem 16px para a direita */
+}
+
+.logo img {
+    height: 100%; /* Ajusta a altura da imagem para preencher a altura do cabeçalho */
+    max-height: 115px; /* Garante que a imagem não ultrapasse a altura do cabeçalho */
+}
+
+.redes-sociais {
+    margin-left: auto; /* Empurra as redes sociais para a direita */
+    display: flex;
+    align-items: center;
+    gap: 5px; /* Adiciona um espaçamento entre as imagens */
+    padding-right: 200pX; /* Adiciona espaçamento à direita */
+}
+
+.redes-sociais a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.redes-sociais img {
+    height: 32px; /* Ajuste a altura das imagens das redes sociais conforme necessário */
+    width: auto; /* Mantém a proporção da imagem */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
+
+.redes-sociais img:hover {
+    transform: scale(1.4); /* Aumenta o tamanho em 30% quando o mouse passa sobre a imagem */
+}
+
+.main-content {
+    margin: 20px auto; /* Centraliza o main e adiciona um espaçamento superior/inferior */
+    width: 980px; /* Define a largura fixa de 980px */
+    padding: 20px; /* Adiciona um pouco de espaçamento interno */
+}
+
+.header-2 {
+    background-color: #ffffff;
+    width: 980px;
+    margin: 0 auto;
+    padding: 16px;
+
+    
+}
+.menu ul li:hover a {
+    color: red; /* Altera a cor do texto para vermelho quando o mouse passa sobre o link */
+}
+
+.menu-urls {
+    height: 80px;
+border-bottom: 3px solid #efefef;
+}
+
+.menu {
+    width: 70%;
+    float: left;
+}
+
+.busca {
+    text-align: center;
+    width: 30%;
+    float: right;
+}
+.busca input {
+    background-image: url('../img/lupa.png');
+    background-size: 15%; /* Reduz o tamanho da imagem para 80% do espaço do elemento */
+    background-repeat: no-repeat; /* Impede que a imagem de fundo se repita */
+    background-position: center right; /* Posiciona a imagem de fundo no centro à direita */
+    background-color: transparent; /* Define o fundo como transparente para remover o quadrado branco */
+    height: 23px;
+    margin-top: 10px;
+    padding: 7px 30px 7px 10px; /* Adiciona um espaço à direita para o ícone da lupa */
+    width: 190px;
+}
+
+
+.menu ul li {
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 15px;
+}
+
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.col-100 {
+    width: 100%;
+    float:left ;
+    position: relative;
+}
+
+.quem-somos {
+    margin-top: 50px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.quem-somos h1 {
+    color: #252323; /* Cor do título */
+    font-size: 36px; /* Tamanho do título */
+    margin-bottom: 0px; /* Espaçamento inferior */
+    font-family: cursive; /* Fonte cursiva */
+    text-align: center; /* Centraliza o título */
+    padding-right: 50px;
+}
+
+.content-wrapper {
+    display: flex; /* Usa flexbox para alinhar os elementos lado a lado */
+    align-items: flex-start; /* Alinha os itens no início do contêiner */
+}
+
+.quem-somos, .colaboradores {
+    margin-top: 50px; /* Espaçamento superior */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.quem-somos h1, .colaboradores h2 {
+    color: #000000; /* Cor do título */
+    font-size: 36px; /* Tamanho do título */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    font-family: cursive; /* Fonte cursiva */
+    text-align: center; /* Centraliza o título */
+}
+
+.content-wrapper {
+    display: flex; /* Usa flexbox para alinhar os elementos lado a lado */
+    align-items: flex-start; /* Alinha os itens no início do contêiner */
+}
+
+.image-content {
+    flex: 0 0 300px; /* Define a largura fixa da imagem */
+    display: flex;
+    justify-content: center; /* Centraliza a imagem horizontalmente */
+    align-items: center; /* Centraliza a imagem verticalmente */
+}
+
+.image-content img {
+    max-width:100%; /* Garante que a imagem não ultrapasse o contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    width: 200%;
+    background-position: 0 20px;
+}
+
+.text-content {
+    flex: 1; /* Ocupa todo o espaço disponível */
+    padding-left: 20px; /* Espaçamento à esquerda */
+}
+
+.quem-somos p, .colaboradores p {
+    color: #000000; /* Cor do texto */
+    font-size: 16px; /* Tamanho do texto */
+    line-height: 1.6; /* Altura da linha */
+    text-align: justify; /* Justifica o texto */
+    font-family: Arial, sans-serif; /* Fonte Arial */
+    
+}
+
+/* Classe para ajustar o tamanho da imagem */
+.imagem-ajustavel {
+    width: 400%; /* Ajuste conforme necessário */
+    max-width: 1000px; /* Exemplo de ajuste de tamanho máximo */
+}
+
+
+
+
+/* CSS para o layout do formulário */
+form {
+    margin: 0 auto; /* Centraliza o formulário na página */
+    max-width: 500px; /* Largura máxima do formulário */
+    padding: 20px; /* Espaçamento interno */
+    background-image: url("../img/fundo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    margin-top: 200px;
+}
+
+/* Estilos para os campos do formulário */
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: calc(100% - 20px); /* Largura ajustada */
+    padding: 10px; /* Espaçamento interno */
+    margin-bottom: 20px; /* Espaçamento inferior */
+    border: 1px solid #ffffff; /* Borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Ajuste do modelo de caixa */
+}
+
+/* Estilos para o botão de envio */
+button {
+    display: block; /* Torna o botão um bloco */
+    width: 100%; /* Largura total */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: rgb(255, 255, 255); /* Cor do texto */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Altera o cursor ao passar por cima */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+/* Estilos para o botão de envio ao passar o mouse */
+button:hover {
+    background-color: #ffffff; /* Cor de fundo alterada */
+}
+
+/* CSS para a mensagem de confirmação */
+#mensagem-confirmacao {
+    display: none; /* Inicialmente oculto */
+    position: fixed; /* Posicionamento fixo */
+    top: 50%; /* Posiciona a mensagem no meio verticalmente */
+    left: 50%; /* Posiciona a mensagem no meio horizontalmente */
+    transform: translate(-50%, -50%); /* Centraliza a mensagem */
+    background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo com transparência */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 10px; /* Bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra */
+    z-index: 9999; /* Posicionamento sobre outros elementos */
+}
+
+h3 {
+    font-family: cursive
+    position: fixed
+     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Adiciona uma sombra de texto */
+}
+ 
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #f4f4f4;
+    gap: 20px;
+    text-align: justify
+}
+
+.image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    flex: 1;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 10;
+    position: relative;
+    font-family: ;
+}
+
+.image-item img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px; /* Adiciona um espaço entre a imagem e o texto */
+}
+
+
+.image-item h2, .image-item p {
+    color: black; /* Define a cor preta para títulos e parágrafos */
+}
+
+.image-item h2 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.image-item p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+.image-item::before {
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.image-container button:nth-child(2)::before,
+.image-container button:nth-child(3)::before {
+    display: block;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-principal {
+    width: 100%;
+    height: calc(100vw * 3 / 8); /* Calcular a altura com base na largura da viewport e na proporção 8:3 */
+    max-height: 500vh; /* Limitar a altura à altura máxima da viewport */
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse a altura da viewport */
+}
+
+.slider-principal img {
+    width: 100vw; /* Ocupar toda a largura da viewport */
+    height: auto; /* Manter a proporção da imagem */
+    min-width: 100px; /* Definir a largura mínima da imagem */
+    min-height: 100%; /* Definir a altura mínima da imagem */
+}
+
+/* Restante do seu CSS para slick-carousel e setas slick-prev/slick-next */
+
+
+.slick-prev, .slick-next {
+    background-color: rgba(0, 0, 0, 0.5); /* Cor das setas com transparência */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.slick-prev {
+    left: 10px;
+}
+
+.slick-next {
+    right: 10px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 20px;
+    color: white; /* Cor do ícone das setas */
+}
+
+.nossos-colaboradores h3 {
+   font-family: cursive;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #230064, #000000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    
+    transition: transform 0.3s ease-in-out;
+    margin-top: 15px;
+}
+
+.text-serviços2 {
+    color: #252323; /* Cor do título */
+    font-size: 17px; /* Tamanho do título */
+    margin-bottom: 0px; /* Espaçamento inferior */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte cursiva */
+    text-align: justify; /* Centraliza o título */
+    padding-right: 150px;
+    flex: 1; /* Ocupa todo o espaço disponível */
+    padding-left: 200px; /* Espaçamento à esquerda */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+
+.main-content {
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.servico {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s;
+}
+
+.servico img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.descricao {
+    padding: 20px;
+}
+
+.descricao h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.descricao p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+    overflow: hidden;
+    max-height: 4.5em; /* Aproximadamente 3 linhas de texto */
+    line-height: 1.5em;
+    transition: max-height 0.3s ease;
+}
+
+.descricao p.expanded {
+    max-height: 20em; /* Expande para 20 linhas */
+}
+
+.btn-descricao, .btn-ver-mais {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.btn-descricao:hover, .btn-ver-mais:hover {
+    background-color: #0056b3;
+}
+
+.servico:hover {
+    transform: translateY(-10px);
+}
+
+.serviços-prestados h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, #00C9FF, #92FE9D);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    margin-top: 60px;
+}
+
+.text-serviços {
+    
+    color: #252323; /* Cor do título */
+    font-size: 17px; /* Tamanho do título */
+    margin-bottom: 0px; /* Espaçamento inferior */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte cursiva */
+    text-align: justify; /* Centraliza o título */
+    padding-right: 150px;
+    flex: 1; /* Ocupa todo o espaço disponível */
+    padding-left: 200px; /* Espaçamento à esquerda */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+    margin-top: 20px;
+}
+
+.bloco-logos {
+    display: flex;
+    justify-content: space-around; /* Distribui os itens com espaço ao redor */
+    align-items: flex-start; /* Alinha os itens no início verticalmente */
+    flex-wrap: wrap; /* Permite a quebra de linha se necessário */
+    background-color: #f2f2f2; /* Define a cor de fundo como cinza */
+    padding: 20px; /* Espaçamento ao redor do bloco de logos */
+}
+
+.logo-item {
+    flex: 1; /* Cada item ocupará o mesmo espaço disponível */
+    max-width: 200px; /* Limita a largura máxima de cada logo */
+    padding: 10px; /* Espaçamento ao redor de cada logo */
+    text-align: center; /* Centraliza o texto dentro do logo-item */
+    margin-bottom: 20px; /* Espaçamento abaixo de cada logo-item */
+    background-color: #f2f2f2; /* Define a cor de fundo dos itens como cinza */
+    border-radius: 5px; /* Adiciona bordas arredondadas */
+    
+}
+
+.logo-item img {
+    width: 100%; /* Assegura que as imagens ocupem todo o espaço do contêiner */
+    height: auto; /* Mantém a proporção das imagens */
+}
+
+.info h3{
+    text-align: center;
+}
+
+.info {
+    background-color: #f2f2f2; /* Fundo cinza */
+    color: black; /* Texto preto */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    text-align: justify;
+}
+
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.footer .contact-info {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer .contact-info p {
+    margin: 5px 0; /* Espaçamento entre as linhas de contato */
+}
+
+.footer .copyright {
+    padding-right: 80px;
+    font-size: 17px;
+    text-align: right; /* Alinha o texto de copyright à direita */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.contact-info {
+    color: white; /* Define a cor do texto como branca */
+}
+
+.contact-info a {
+    color: white; /* Define a cor dos links como branca */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse sobre os links */
+}
+
+.rodape {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+}
+
+.rodape p {
+    margin: 0;
+    font-size: 0.9em;
+}
